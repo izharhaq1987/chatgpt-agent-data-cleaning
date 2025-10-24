@@ -41,8 +41,10 @@ async def validate_endpoint(
             return FileResponse(cleaned_path, filename="cleaned.csv")
 
         return JSONResponse({
-            "job_id": job_id,
-            "summary": report.get("summary", {}),
-            "findings": report.get("findings", []),
-            "suggested_fixes": report.get("suggested_fixes", []),
-        })
+    "version": "0.1.0",
+    "job_id": job_id,
+    "summary": report.get("summary", {}),
+    "findings": report.get("findings", []),
+    "suggested_fixes": report.get("suggested_fixes", []),
+})
+
