@@ -1,0 +1,6 @@
+order_id,order_date,customer_email,country,qty,unit_price,discount
+1,2025-01-10,alice@example.com,United States,1,100,0
+2,2025-01-11,bob@example.com,Untied States,2,-50,0.1
+3,2025-01-11,carol@example.com,Canada,0,25,1.5
+4,2025-02-01,dave@example.com,United States,3,19.99,
+5,2025-03-05,,United States,1,999999,0
