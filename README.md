@@ -50,7 +50,7 @@ Example Response (abridged)
   ]
 }
 
-📂 Project Layout
+## Project Layout ##
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # deterministic checks
 core/llm.py             # suggestion/fix proposal wrapper
