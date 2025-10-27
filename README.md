@@ -63,7 +63,7 @@ tests/                  # Unit tests and fixtures
 
 ### FastAPI Docs UI
 
-```md```
+```md
 ![FastAPI Docs UI](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/docs_ui.png?raw=true)
 
 ### Example CSV
