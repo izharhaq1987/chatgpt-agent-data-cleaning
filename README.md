@@ -46,11 +46,12 @@ tests/                # unit tests and fixtures
 License
 
 MIT (see LICENSE)
-
 ## Screenshots
-![FastAPI Docs UI](images/docs_ui.png)
-![Example CSV](images/example_csv.png)
-![Validate Endpoint](images/validate_ui.png)
+
+| API Docs | Example CSV | Validate Endpoint |
+|---|---|---|
+| ![FastAPI Docs UI](images/docs_ui.png) | ![Example CSV](images/example_csv.png) | ![FastAPI /validate](images/validate_ui.png) |
+
 
 ## API
 - **POST** `/validate` — multipart file=CSV, `?apply=true` to write cleaned file  
