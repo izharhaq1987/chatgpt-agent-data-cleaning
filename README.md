@@ -29,6 +29,7 @@ Health Check
 curl -s http://localhost:8000/health
 
 Validate a CSV
+```bash```
 curl -s -X POST http://localhost:8000/validate \
   -H "Content-Type: application/json" \
   -d '{
@@ -39,6 +40,7 @@ curl -s -X POST http://localhost:8000/validate \
   }'
 
 Example Response (abridged)
+```json```
 {
   "summary": {"rows": 1234, "errors": 7, "warnings": 3},
   "deterministic_findings": [
@@ -50,6 +52,7 @@ Example Response (abridged)
 }
 
 📂 Project Layout
+**text**
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # Deterministic checks
 core/llm.py             # Suggestion/fix proposal wrapper
