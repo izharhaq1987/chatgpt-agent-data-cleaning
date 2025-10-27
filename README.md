@@ -9,7 +9,7 @@ Agent that ingests CSVs, runs **deterministic data-quality checks**, then overla
 - Fast, streaming-friendly endpoint
 
 ## Quick Start
-```bash
+bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn app:app --host 0.0.0.0 --port 8000
@@ -49,9 +49,14 @@ MIT (see LICENSE)
 
 ## Screenshots
 
-| API Docs | Example CSV | Validate Endpoint |
-|---|---|---|
-| ![FastAPI Docs UI](images/docs_ui.png) | ![Example CSV](images/example_csv.png) | ![FastAPI /validate](images/validate_ui.png) |
+### FastAPI Docs UI
+![FastAPI Docs UI](images/docs_ui.png)
+
+### Example CSV
+![Example CSV](images/example_csv.png)
+
+### Validate Endpoint
+![FastAPI /validate](images/validate_ui.png)
 
 ## API
 - **POST** `/validate` — multipart file=CSV, `?apply=true` to write cleaned file  
