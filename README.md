@@ -57,14 +57,18 @@ core/report.py          # JSON report shaping
 tests/                  # Unit tests and fixtures
 
 📸 Screenshots
+
 FastAPI Docs UI
+
 ```md```
 ![FastAPI Docs UI](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/docs_ui.png?raw=true)
 
 Example CSV
+
 ![Example CSV](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/example_csv.png?raw=true)
 
 Validate Endpoint
+
 ![Validate End](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/validate_ui.png?raw=true)
 
 API
