@@ -15,7 +15,7 @@ Exposes a FastAPI service with `/validate` and `/health` endpoints.
 
 ## Quick Start
 
-### 1️⃣ Environment setup
+### 1️⃣ Environment Setup
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -24,9 +24,8 @@ pip install -r requirements.txt
 2️⃣ Run the API
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 
-3️⃣ Test the endpoints
-
-Health check
+3️⃣ Test the Endpoints
+Health Check
 curl -s http://localhost:8000/health
 
 Validate a CSV
@@ -50,32 +49,34 @@ Example Response (abridged)
   ]
 }
 
-## Project Layout ##
+📂 Project Layout
 app.py                  # FastAPI app (/validate, /health)
-core/validators.py      # deterministic checks
-core/llm.py             # suggestion/fix proposal wrapper
+core/validators.py      # Deterministic checks
+core/llm.py             # Suggestion/fix proposal wrapper
 core/report.py          # JSON report shaping
-tests/                  # unit tests and fixtures
+tests/                  # Unit tests and fixtures
 
-## Screenshots
+📸 Screenshots
+FastAPI Docs UI
+```md
+![FastAPI Docs UI](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/docs_ui.png?raw=true)
 
-### FastAPI Docs UI
-![FastAPI Docs UI](images/docs_ui.png)
+Example CSV
+![Example CSV](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/example_csv.png?raw=true)
 
-### Example CSV
-![Example CSV](images/example_csv.png)
+Validate Endpoint
+![Validate End](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/validate_ui.png?raw=true)
 
-### Validate Endpoint
-![FastAPI /validate](images/validate_ui.png)
+API
+POST /validate → multipart file upload; optional apply=true query writes cleaned CSV.
+GET /health → service heartbeat (returns 200 OK).
 
-## API
-- **POST** `/validate` → multipart file upload; optional `apply=true` query writes cleaned CSV.
-- **GET** `/health` → service heartbeat (200 OK)
-
-## Folders
-- `app/services/` → core ingestion, profiling, and LLM modules
-- `app/routers/` → FastAPI route handlers
+Folders
+app/services/ → Core ingestion, profiling, and LLM modules.
+app/routers/ → FastAPI route handlers.
 
 License
-
 MIT (see LICENSE)
+
+
+
