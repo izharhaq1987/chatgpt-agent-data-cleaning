@@ -39,8 +39,8 @@ curl -s -X POST http://localhost:8000/validate \
     "enable_llm_review": true
   }'
 
-Example Response (abridged)
-```json```
+### Example Response (abridged)
+```json
 {
   "summary": {"rows": 1234, "errors": 7, "warnings": 3},
   "deterministic_findings": [
@@ -51,38 +51,38 @@ Example Response (abridged)
   ]
 }
 
-📂 Project Layout
-**text**
+## 📂 Project Layout
+**text
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # Deterministic checks
 core/llm.py             # Suggestion/fix proposal wrapper
 core/report.py          # JSON report shaping
 tests/                  # Unit tests and fixtures
 
-📸 Screenshots
+## 📸 Screenshots
 
-FastAPI Docs UI
+### FastAPI Docs UI
 
 ```md```
 ![FastAPI Docs UI](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/docs_ui.png?raw=true)
 
-Example CSV
+### Example CSV
 
 ![Example CSV](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/example_csv.png?raw=true)
 
-Validate Endpoint
+### Validate Endpoint
 
 ![Validate End](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/validate_ui.png?raw=true)
 
-API
+### API
 POST /validate → multipart file upload; optional apply=true query writes cleaned CSV.
 GET /health → service heartbeat (returns 200 OK).
 
-Folders
+### Folders
 app/services/ → Core ingestion, profiling, and LLM modules.
 app/routers/ → FastAPI route handlers.
 
-License
+### License
 MIT (see LICENSE)
 
 
