@@ -16,7 +16,7 @@ Exposes a FastAPI service with `/validate` and `/health` endpoints.
 ## Quick Start
 
 ### 1️⃣ Environment Setup
-```bash
+```bash```
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
