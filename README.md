@@ -46,11 +46,11 @@ tests/                # unit tests and fixtures
 License
 
 MIT (see LICENSE)
-## Screenshots
 
+## Screenshots
 | API Docs | Example CSV | Validate Endpoint |
-|---|---|---|
-| ![FastAPI Docs UI](images/docs_ui.png) | ![Example CSV](images/example_csv.png) | ![FastAPI /validate](images/validate_ui.png) |
+|-----------|--------------|------------------|
+|![FastAPI Docs UI](images/docs_ui.png)|![Example CSV](images/example_csv.png)|![FastAPI /validate](images/validate_ui.png)|
 
 
 ## API
