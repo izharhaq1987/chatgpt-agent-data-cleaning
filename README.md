@@ -47,6 +47,11 @@ License
 
 MIT (see LICENSE)
 
+## Screenshots
+![FastAPI Docs UI](images/docs_ui.png)
+![Example CSV](images/example_csv.png)
+![Validate Endpoint](images/validate_ui.png)
+
 ## API
 - **POST** `/validate` — multipart file=CSV, `?apply=true` to write cleaned file  
 - **GET** `/health` — service heartbeat
