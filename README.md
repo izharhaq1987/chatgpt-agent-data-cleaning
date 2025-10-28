@@ -29,6 +29,7 @@ Health Check
 curl -s http://localhost:8000/health
 
 ### Validate a CSV
+```bash
 curl -s -X POST http://localhost:8000/validate \
   -H "Content-Type: application/json" \
   -d '{
@@ -37,9 +38,9 @@ curl -s -X POST http://localhost:8000/validate \
     "rules": [{"type": "unique", "columns": ["id"]}],
     "enable_llm_review": true
   }'
-
+```
 ### ``Example Response (abridged)``
-```json```
+```json
 {
   "summary": {"rows": 1234, "errors": 7, "warnings": 3},
   "deterministic_findings": [
@@ -49,16 +50,16 @@ curl -s -X POST http://localhost:8000/validate \
     {"rule": "trim(name)", "rationale": "leading spaces common in 5% rows"}
   ]
 }
-
+```
 ## 📂 Project Layout
-```text```
+```text
 
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # Deterministic checks
 core/llm.py             # Suggestion/fix proposal wrapper
 core/report.py          # JSON report shaping
 tests/                  # Unit tests and fixtures
-
+```
 ## 📸 Screenshots
 
 ### FastAPI Docs UI
