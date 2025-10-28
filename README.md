@@ -29,7 +29,6 @@ Health Check
 curl -s http://localhost:8000/health
 
 ### Validate a CSV
-```bash```
 curl -s -X POST http://localhost:8000/validate \
   -H "Content-Type: application/json" \
   -d '{
