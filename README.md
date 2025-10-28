@@ -39,7 +39,7 @@ curl -s -X POST http://localhost:8000/validate \
     "enable_llm_review": true
   }'
 
-### Example Response (abridged)
+### ``Example Response (abridged)``
 ```json
 {
   "summary": {"rows": 1234, "errors": 7, "warnings": 3},
@@ -51,7 +51,7 @@ curl -s -X POST http://localhost:8000/validate \
   ]
 }
 
-## 📂 Project Layout
+## 📂 ``Project Layout``
 ```text```
 
 app.py                  # FastAPI app (/validate, /health)
