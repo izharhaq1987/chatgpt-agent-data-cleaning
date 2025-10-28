@@ -40,7 +40,7 @@ curl -s -X POST http://localhost:8000/validate \
   }'
 
 ### Example Response (abridged)
-```json
+```json``
 {
   "summary": {"rows": 1234, "errors": 7, "warnings": 3},
   "deterministic_findings": [
@@ -52,7 +52,7 @@ curl -s -X POST http://localhost:8000/validate \
 }
 
 ## 📂 Project Layout
-```text
+```text```
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # Deterministic checks
 core/llm.py             # Suggestion/fix proposal wrapper
