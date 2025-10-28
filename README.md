@@ -52,7 +52,7 @@ curl -s -X POST http://localhost:8000/validate \
 }
 
 ## 📂 Project Layout
-**text
+```text
 app.py                  # FastAPI app (/validate, /health)
 core/validators.py      # Deterministic checks
 core/llm.py             # Suggestion/fix proposal wrapper
@@ -62,17 +62,14 @@ tests/                  # Unit tests and fixtures
 ## 📸 Screenshots
 
 ### FastAPI Docs UI
-
-```md
 ![FastAPI Docs UI](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/docs_ui.png?raw=true)
 
 ### Example CSV
-
 ![Example CSV](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/example_csv.png?raw=true)
 
 ### Validate Endpoint
+![FastAPI /validate](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/validate_ui.png?raw=true)
 
-![Validate End](https://github.com/izharhaq1987/chatgpt-agent-data-cleaning/blob/main/images/validate_ui.png?raw=true)
 
 ### API
 POST /validate → multipart file upload; optional apply=true query writes cleaned CSV.
